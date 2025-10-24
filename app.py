@@ -8,7 +8,7 @@ app Flask(__name__)
 
 #Render in otomatik tanımladığı veritabanı bağlantı bilgisi (DATABASE_URL ortam değişkeni)
 
-DATABASE URL os.getenv("DATABASE URL", "")
+DATABASE URL os.getenv("DATABASE URL", "postgresql://hello_kloud2_db_user:UxLdeEE4UxcNel2MieU1ZPlQ3NcexdXf@dpg-d3tjheggjchc73fan2ng-a.oregon-postgres.render.com/hello_kloud2_db")
 
 #HTML ŞABLONU (tek sayfada form + liste)
 
