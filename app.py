@@ -2,7 +2,7 @@ from flask import Flask, render_template_string, request
 
 import os
 
-Import psycopg2
+import psycopg2
 
 app Flask(__name__)
 
