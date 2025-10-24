@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 #Render in otomatik tanımladığı veritabanı bağlantı bilgisi (DATABASE_URL ortam değişkeni)
 
-DATABASE_URL = os.getenv("DATABASE URL", "postgresql://hello_kloud2_db_user:UxLdeEE4UxcNel2MieU1ZPlQ3NcexdXf@dpg-d3tjheggjchc73fan2ng-a.oregon-postgres.render.com/hello_kloud2_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://hello_kloud2_db_user:UxLdeEE4UxcNel2MieU1ZPlQ3NcexdXf@dpg-d3tjheggjchc73fan2ng-a.oregon-postgres.render.com/hello_kloud2_db")
 
 #HTML ŞABLONU (tek sayfada form + liste)
 
@@ -100,7 +100,7 @@ conn.commit()
 
 cur.execute("SELECT isim FROM ziyaretciler ORDER BY id DESC LIMIT 10")
 
-isimler [row[9] for row in cur.fetchall()]
+isimler [row[0] for row in cur.fetchall()]
 
 cur.close()
 
